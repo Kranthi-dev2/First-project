@@ -1,0 +1,13 @@
+
+#!/bin/bash
+
+# Create user with home directory
+useradd -m "$USERNAME"
+
+# Set password
+echo "Set password for $USERNAME"
+passwd "$USERNAME"
+
+# Print current date
+echo "User '$USERNAME' created successfully on:"
+date
